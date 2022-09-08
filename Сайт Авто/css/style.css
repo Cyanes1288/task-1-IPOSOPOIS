@@ -1,0 +1,306 @@
+ /* DEBUG
+        div, footer, header {
+            border: 1px groove black;
+        }
+        td {
+            border: 1px groove black;
+        }
+
+ /* ALL PAGES */
+
+        body {
+            margin: 0;
+            padding-top: 45px;
+            text-align: center;
+            font-family: Arial;
+            min-height: 100%;
+        }
+        header {
+            width: 100%;
+            background-color: white;
+            position: fixed;
+            margin: -50px 0 0 0;
+            padding-top: 10px;
+            z-index: 100;
+        }
+        @media (max-width: 1000px) { /* Меньше */
+        header {
+            width: 100%;
+            background-color: white;
+            position: fixed;
+            margin: -50px 0 0 0;
+            z-index: 100;
+        }
+        }
+        footer {
+            width: 100%;
+        }
+        .fixed-bottom {
+            position: fixed;
+            bottom: 0px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .font14 {
+            font-size: 14pt;
+        }
+        .font24 {
+            font-size: 24pt;
+        }
+        .font18 {
+            font-size: 18pt;
+        }
+        .color-1 { /* Цвет акцент 1 */
+            background-color: #00A779;
+        }
+        .color-2 { /* Цвет акцент 2 */
+            background-color: #FF5C00;
+        }
+        .color-3 { /* Цвет фоновый */
+        background-color: #cafced;
+        }
+        .color-white {
+        background-color: white;
+        }
+        .white {
+            color: white;
+        }
+        .shadow-txt {
+            text-shadow: 2px 2px 2px black;
+        }
+        .all-width {
+            width: 100%;
+        }
+        .about {
+            text-align: left;
+            width: 94%;
+            margin: 0 auto;
+
+        }
+        .nav {
+            font-size: 18pt;
+            text-decoration: none;
+            color: #00A779;
+            padding-left: 20px;
+        }
+            .nav:hover {
+                text-decoration: underline;
+                color: #00A779;
+            }
+            .nav:active {
+                color: #FF5C00;
+            }
+        .link {
+            color: white;
+            text-decoration: none;
+        }
+            .link:hover {
+                color: #FFA573;
+                text-decoration: underline;
+            }
+            .link:active {
+                color: #A63C00;
+            }
+
+
+ /* MAIN */
+        .content {
+            width: 100%;
+            margin: 0 auto 20px auto;
+            padding: 10px 0 10px 0;
+        }
+        @media (min-width: 1000px) { /* Больше */
+            .content {
+                width: 1000px;
+            }
+        }
+
+        
+        .slogan {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 24pt;
+	    font-style: italic;
+        }
+        .logo {
+        padding: 14px;
+        display: inline-block;
+        height: 80px;
+        vertical-align: middle;
+        }
+
+ /* PROMO */
+        #us {
+            width: 100%;
+            height: 200px;
+            background: #000 url(../img/car-2.jpg) no-repeat center;
+            background-size: 400px;
+            text-align: center;
+        }
+        .promo-1 {
+            font-size: 14pt;
+            height: 120px;
+        }
+        .btn-catalog {
+        position: relative;
+        background-color: white;
+        color: black;
+        padding: 10px;
+        
+        }
+        @media (min-width: 1000px) { /* Больше */
+        #us {
+            height: 500px;
+            background-size: 1000px;
+        }
+        .promo-1 {
+            font-size: 36pt;
+            height: 350px;
+        }
+        }
+        
+ /* NEWS */
+        .block-news {
+            display: block;
+            width: 350px;
+            height: 220px;
+            vertical-align: top;
+            margin: 5px auto;
+        }
+        .btn-news {
+            width: 350px
+        }
+        @media (min-width: 1000px) { /* Больше */
+        .block-news {
+            display: inline-block;
+            width: 480px;
+        }
+        .btn-news {
+            width: 965px
+        }
+        }
+
+ /* SUBCCRIPTION */
+        .subscribe {
+        width: 90%;
+        margin: 0 auto;
+        }
+        .ok {
+        background-color: #FF5C00;
+        }
+        .ok:hover {
+        background-color: #FFA573;
+        }
+        .ok:active {
+        background-color: #A63C00;
+        }
+
+ /* Картинки новостей */
+        .bg-1 {
+            background: #111 url(../img/news/bg-1.jpg) 500px;
+        }
+        .bg-2 {
+            background: #111 url(../img/news/bg-2.jpg) 100%;
+        }
+        .bg-3 {
+            background: #111 url(../img/news/bg-3.jpg) 100%;
+        }
+        .bg-4 {
+            background: #111 url(../img/news/bg-4.jpg) 100%;
+        }
+
+
+ /* CATALOG - NEWS */
+        .car-list{
+            display: inline-block;
+            vertical-align: top;
+            height: 800px;
+            width: 350px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        .car-text {
+            display: inline-block;
+            width: 350px;
+            height: 450px;
+            vertical-align: top;
+        }
+        @media (min-width: 1000px) { /* Больше */
+        .car-list{
+            display: block;
+            height: 350px;
+            width: 900px;
+            margin-bottom: 20px;
+
+        }
+        .car-text {
+            width: 540px;
+            height: 350px;
+        }
+        }
+        .car-photo {
+            display: inline-block;
+            width: 350px;
+            height: 350px;
+            vertical-align: top;
+            overflow: hidden;
+        }
+        
+        .name {
+            height: 60px;
+            font-size: 18pt;
+	        font-weight: bold;
+        }
+        .info {
+            height: 40px;
+            font-size: 14pt;
+        }
+        .desc {
+            height: 120px;
+            font-size: 12pt;
+	        font-style: italic;
+        }
+        .news-txt {
+            height: 500px;
+        }
+        .order {
+            border: 1px groove white;
+            width: 80%;
+            background-color: #00A779;
+            color: white;
+        }
+        .order:hover {
+            background-color: #FF5C00;
+        }
+        .order:active {
+            background-color: #A63C00;
+            color: black;
+        }
+
+        /* FORM */
+        .form-div {
+            padding: 10px;
+            width: 450px;
+            margin: 0 auto;
+            text-align: right;
+        }
+        .form {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .padding10 {
+            padding: 10px;
+        }
+
+        /* CABINET */
+        .avatar-circle {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+        }
+        .user {
+            margin: 0px auto;
+
+        }
